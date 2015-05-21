@@ -1,0 +1,22 @@
+%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{eskdx-sans}[2015/05/19]
+
+\ProcessOptions\relax
+
+%%% Прямой шрифт вместо наклонного на титульной странице
+\renewcommand{\ESKDtitleFontI}{\ESKDfontV\upshape}
+\renewcommand{\ESKDtitleFontII}{\ESKDfontIII\upshape}
+\renewcommand{\ESKDtitleFontIII}{\ESKDfontIII\renewcommand{\baselinestretch}{1.50}\selectfont\upshape}
+\renewcommand{\ESKDtitleFontIV}{\ESKDfontV\sffamily\upshape}
+\renewcommand{\ESKDtitleFontV}{\ESKDfontV\upshape}
+\renewcommand{\ESKDtitleFontVI}{\ESKDfontV\sffamily\upshape}
+\renewcommand{\ESKDtitleFontVII}{\ESKDfontIII\upshape}
+\renewcommand{\ESKDtitleFontVIII}{\ESKDfontIII\renewcommand{\baselinestretch}{1.25}\selectfont\upshape}
+\renewcommand{\ESKDtitleFontX}{\ESKDfontV\upshape}
+
+\ESKDsectStyle{section}{\normalfont\sffamily\Large\bfseries\MakeUppercase}
+\ESKDsectStyle{subsection}{\normalfont\sffamily\large\bfseries}
+\ESKDsectStyle{subsubsection}{\normalfont\sffamily\normalsize\bfseries}
+
+\endinput

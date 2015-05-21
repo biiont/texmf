@@ -1,0 +1,11 @@
+%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{marginpar-inline}[2015/05/19]
+
+\RequirePackage{framed}
+
+\ProcessOptions\relax
+
+\renewcommand\marginpar[1]{\par{\begin{leftbar}\raggedright\footnotesize #1\end{leftbar}}\par}
+
+\endinput
