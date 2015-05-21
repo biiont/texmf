@@ -3,9 +3,33 @@
 
 \RequirePackage{geometry}
 \RequirePackage{xelatex-russian}
+\RequirePackage{titlesec}
+%\RequirePackage{titling}
+\RequirePackage{indentfirst}
+\RequirePackage{nomencl}
 
 \ProcessOptions\relax
 
 \geometry{a4paper, top=20mm, bottom=20mm, inner=15mm, bindingoffset=15mm, outer=15mm}
+
+\titleformat{\section}{\normalfont\Large\sffamily\bfseries}{\thetitle\quad}{0pt}{}
+\titleformat{\subsection}{\normalfont\large\sffamily\bfseries}{\thetitle\quad}{0pt}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\sffamily\bfseries}{\thetitle\quad}{0pt}{}
+
+%\newcommand{\disablesectno}{%
+%  \titlelabel{}
+%}
+
+%\if@disablesectno
+%\disablesectno
+%\fi
+
+%\pretitle{\begin{center}\normalfont\LARGE\sffamily\bfseries}
+%\posttitle{\par\end{center}}
+
+\makenomenclature
+\renewcommand{\nomname}{Обозначения и сокращения}
+
+\bibliographystyle{unsrt} %Стиль библиографических ссылок БибТеХа
 
 \endinput
