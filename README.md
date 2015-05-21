@@ -1,4 +1,4 @@
-# Persoanl xetex styles
+# biiont's persoanl xetex styles
 
 This is personal xetex styles.
 
@@ -6,7 +6,7 @@ This is personal xetex styles.
 
 Before installation need to configure local texmf directory placement. Add following line to your shell profile (~/.bashrc or which is used by your shell) to move texmf to proper XDG location:
 ```
-TEXMFHOME=/home/biiont/.local/share/texmf
+TEXMFHOME="${HOME}/.local/share/texmf"
 ```
 
 Execute following commands to install it:
